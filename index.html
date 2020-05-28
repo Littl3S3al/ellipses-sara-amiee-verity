@@ -7,8 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- canvas for drawing -->
     <canvas id="canvas"></canvas> 
 
-    <script src="script.js"></script> 
+    <!-- token example -->
+    <div id="placeholder1">
+        <div id="token1"></div>
+    </div>
+
+    <!-- token content -->
+    <div id="mask">
+    </div>
+
+
+    <!-- loading screen -->
+    <div class="onload">
+        <h1 class="loading">Loading...</h1>
+        <button>Begin</button>
+    </div>
+    <div class="content">
+        <img src="assets/images/token1/bw-dump.jpg">
+        <img src="assets/images/token1/carnival.jpg">
+        <img src="assets/images/token1/casbah.jpg">
+        <img src="assets/images/token1/choc-99.jpg">
+        <img src="assets/images/token1/daggafontein.jpg">
+        <img src="assets/images/token1/dump-v.jpg">
+        <img src="assets/images/token1/dump.jpg">
+        <audio src="assets/audio/car.wav"></audio>
+        <audio src="assets/audio/piano.mp3"></audio>
+    </div>
+    
+    <!-- draggabilly -->
+    <!-- https://www.jqueryscript.net/other/drag-drop-draggabilly.html -->
+    <script src="https://unpkg.com/draggabilly/dist/draggabilly.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/draggabilly/draggabilly.min.js"></script>
+
+    <!-- custom scripts -->
+    
+    <script src="scripts/chalk.js"></script> 
+    <script src="scripts/token.js"></script>
+    <script src="scripts/gen.js"></script>
+    
 </body>
 </html>

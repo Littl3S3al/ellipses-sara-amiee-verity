@@ -3,7 +3,63 @@ html, body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     background: url('assets/images/texture.jpg') no-repeat center center;
     background-size: cover;
+    overflow: hidden;
+    color: white;
 }
+div.onload{
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+button{
+    display: none;
+}
+div.content{
+    display: none;
+}
+
+div#placeholder1{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 20px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#token1{
+    width: 100px;
+    height: 110px;
+    background: url('assets/images/token1.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 1s;
+}
+div#mask{
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    width: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 1s;
+    overflow: hidden;
+}
+div#mask img {
+    transition: 0.2s;
+    height: 400px;
+    position: absolute;
+}
+
+.draggable.is-dragging { z-index: 100; }

@@ -40,10 +40,7 @@ function getPosition(event){
 function startPainting(event){ 
     paint = true; 
   getPosition(event); 
-} 
-function stopPainting(){ 
-
-} 
+}
     
 function sketch(event){ 
     if(!paint){return};
