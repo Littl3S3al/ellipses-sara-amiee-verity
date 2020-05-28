@@ -72,21 +72,15 @@ voiceover.addEventListener('ended', () => {
     mask.innerHTML = '';
     // start painting again
     paint = true;
+    token1.style.cssText = `
+        width: 100px;
+        height: 110px;
+        background: url('assets/images/token-used.png') no-repeat center center;
+        background-size: contain;
+        opacity: 1;
+    `;
 })
-let z = 200;
 
-
-function onDragEnd( draggie ) {
-    // compare movement
-    var drag = draggie.dragPoint;
-    var message;
-    if ( drag.x === 0 && drag.y === 0 ) {
-      message = 'click'
-    } else {
-      message = 'move'
-    }
-    console.log( message );
-  }
      
 
 
