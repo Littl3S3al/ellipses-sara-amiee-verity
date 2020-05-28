@@ -1,5 +1,5 @@
 const loadingScreen = document.querySelector('.onload');
-let begin = document.querySelector('button');
+let begin = document.querySelector('.startText');
 let loadin = document.querySelector('.loading');
 let start = false;
 

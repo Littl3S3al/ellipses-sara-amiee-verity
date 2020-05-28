@@ -7,6 +7,13 @@ html, body {
     background-size: cover;
     overflow: hidden;
     color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+}
+button{
+    font-size: 2em;
+    font-family: 'Roboto Mono', monospace;
+    background: orange;
 }
 div.onload{
     background: black;
@@ -21,7 +28,7 @@ div.onload{
     left: 0;
     transition: 0.5s;
 }
-button{
+.startText{
     display: none;
 }
 div.content{
