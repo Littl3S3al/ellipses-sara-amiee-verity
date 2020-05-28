@@ -46,13 +46,13 @@ function sketch(event){
     if(!paint){return};
   ctx.beginPath(); 
     
-  ctx.lineWidth = 0.5; 
+  ctx.lineWidth = 10; 
    
   // Sets the end of the lines drawn 
   // to a round shape. 
   ctx.lineCap = 'round'; 
     
-  ctx.strokeStyle = 'white'; 
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)'; 
       
   // The cursor to start drawing 
   // moves to this coordinate 
