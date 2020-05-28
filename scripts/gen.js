@@ -1,6 +1,7 @@
 const loadingScreen = document.querySelector('.onload');
 let begin = document.querySelector('button');
 let loadin = document.querySelector('.loading');
+let start = false;
 
 window.addEventListener('load', () => {
     begin.style.display = 'block';
@@ -10,5 +11,6 @@ window.addEventListener('load', () => {
 begin.addEventListener('click', () => {
     loadingScreen.style.opacity = 0;
     loadingScreen.style.zIndex = -100;
+    start = true;
 })
 

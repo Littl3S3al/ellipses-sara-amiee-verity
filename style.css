@@ -56,10 +56,22 @@ div#mask{
     transition: 1s;
     overflow: hidden;
 }
-div#mask img {
+div#mask div {
     transition: 0.2s;
-    height: 400px;
+    height: 600px;
+    width: auto;
     position: absolute;
+    overflow-y: scroll;
+    background: black;
+    border: solid 1px white;
+}
+div#mask .draggable img{
+    height: 100%;
+}
+div#mask .draggable p{
+    width: 200px;
 }
 
-.draggable.is-dragging { z-index: 100; }
+.draggable.is-dragging { 
+    z-index: 100;
+}
